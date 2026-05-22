@@ -73,7 +73,6 @@ dataset/
 
 Messenger RNA expression data representing gene activity levels.
 
-- Shape: **(3217, 8314)**
 - Rows: mRNA gene features
 - Columns: patient samples
 - Data type: continuous numerical values
@@ -99,7 +98,6 @@ Messenger RNA expression data representing gene activity levels.
 
 MicroRNA expression profiles involved in gene regulation.
 
-- Shape: **(383, 8314)**
 - Rows: miRNA features
 - Columns: patient samples
 - Data type: continuous numerical values
@@ -125,7 +123,6 @@ MicroRNA expression profiles involved in gene regulation.
 
 Epigenetic methylation features related to gene regulation.
 
-- Shape: **(3139, 8314)**
 - Rows: methylation features / probes
 - Columns: patient samples
 - Data type: continuous numerical values
@@ -146,7 +143,6 @@ Epigenetic methylation features related to gene regulation.
 
 Genomic structural variation features representing DNA copy number changes.
 
-- Shape: **(3105, 8314)**
 - Rows: CNV-related genomic features
 - Columns: patient samples
 - Data type: continuous numerical values
