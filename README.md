@@ -1,4 +1,4 @@
-# Multi-Omics Cancer Dataset (Top Features Version)
+# Multi-Omics Cancer Dataset
 
 ## Overview
 
@@ -36,7 +36,7 @@ This dataset contains the following four cancer datasets:
 
 # Dataset Structure
 
-```text
+
 dataset/
 ├── BRCA/
 │   ├── BRCA_mRNA_top.csv
