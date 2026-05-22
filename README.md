@@ -65,3 +65,101 @@ dataset/
     ├── OV_Methy_top.csv
     ├── OV_CNV_top.csv
     └── OV_label.csv
+# Omics Modalities
+
+## 1. mRNA
+
+Messenger RNA expression data representing gene activity levels.
+
+- Shape: **(3217, 8314)**
+- Rows: mRNA gene features
+- Columns: patient samples
+- Data type: continuous numerical values
+
+### Example File
+`BRCA_mRNA_top.csv`
+
+### Example Features
+- `KRT5`
+- `KRT6A`
+- `CEACAM5`
+
+### Example
+
+| Feature (Gene) | TCGA-IB-AAUW-01 | TCGA-AJ-A3EJ-01 |
+|---|---|---|
+| KRT5 | 0.565732 | -0.063888 |
+| KRT6A | -0.122688 | -0.114109 |
+
+---
+
+## 2. miRNA
+
+MicroRNA expression profiles involved in gene regulation.
+
+- Shape: **(383, 8314)**
+- Rows: miRNA features
+- Columns: patient samples
+- Data type: continuous numerical values
+
+### Example File
+`BRCA_miRNA_top.csv`
+
+### Example Features
+- `hsa-miR-205-5p`
+- `hsa-miR-375`
+- `hsa-miR-200c-3p`
+
+### Example
+
+| miRNA Feature | TCGA-IB-AAUW-01 | TCGA-AJ-A3EJ-01 |
+|---|---|---|
+| hsa-miR-205-5p | 0.384463 | 0.854965 |
+| hsa-miR-375 | 1.314672 | 0.004291 |
+
+---
+
+## 3. DNA Methylation (Methy)
+
+Epigenetic methylation features related to gene regulation.
+
+- Shape: **(3139, 8314)**
+- Rows: methylation features / probes
+- Columns: patient samples
+- Data type: continuous numerical values
+
+### Example File
+`BRCA_Methy_top.csv`
+
+### Example
+
+| Methylation Feature | TCGA-IB-AAUW-01 | TCGA-AJ-A3EJ-01 |
+|---|---|---|
+| cg00000029 | 0.245 | -0.381 |
+| cg00000108 | -0.112 | 0.593 |
+
+---
+
+## 4. Copy Number Variation (CNV)
+
+Genomic structural variation features representing DNA copy number changes.
+
+- Shape: **(3105, 8314)**
+- Rows: CNV-related genomic features
+- Columns: patient samples
+- Data type: continuous numerical values
+
+### Example File
+`BRCA_CNV_top.csv`
+
+### Example Features
+- `EGFR`
+- `CCND1`
+- `FGF19`
+
+### Example
+
+| CNV Feature | TCGA-IB-AAUW-01 | TCGA-AJ-A3EJ-01 |
+|---|---|---|
+| EGFR | -0.407662 | -0.036677 |
+| CCND1 | -0.244089 | -0.780234 |
